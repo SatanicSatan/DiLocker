@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PinActivity"
+    android:background="@drawable/otpbg3">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@drawable/abg">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/felt_that"
+                android:textColor="@color/ac_c"
+                android:textSize="@dimen/ab_ts"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pinview"
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pinWidth="40dp"
+        app:pinHeight="40dp"
+        app:pinLength="4"
+        app:cursorVisible="false"
+        app:hint="0"
+        app:inputType="number"
+        app:password="true"
+        android:layout_marginTop="70dp"
+        app:pinBackground="@drawable/pinback"/>
+
+    <TextView
+        android:id="@+id/set_pin"
+        android:layout_below="@id/pinview"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:background="@drawable/tranc"
+        android:text="SET PIN"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="155dp"
+        android:textColor="#1de9b6"/>
+
+</RelativeLayout>

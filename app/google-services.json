@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "370064809835",
+    "firebase_url": "https://dilocker-da889.firebaseio.com",
+    "project_id": "dilocker-da889",
+    "storage_bucket": "dilocker-da889.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370064809835:android:910afe18ffba57d6",
+        "android_client_info": {
+          "package_name": "com.example.dilocker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370064809835-2od9en9k0nrkfo0bi2gmhbj2aakf8l4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dilocker",
+            "certificate_hash": "6224d4b60b54f2371d91a818a365e10d124d56e3"
+          }
+        },
+        {
+          "client_id": "370064809835-6udcb1qs2ti9hrp8f54olfeh3s9nbeal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfUZAKSW9PVY-GQQhJr3WShc1dZuI3D1E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370064809835-6udcb1qs2ti9hrp8f54olfeh3s9nbeal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

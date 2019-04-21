@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@drawable/abg">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/felt_that"
+                android:textColor="@color/ac_c"
+                android:textSize="@dimen/ab_ts"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/otpbg3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></View>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight=".6"
+                android:src="@drawable/logo512" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:padding="15dp"
+                    app:cardBackgroundColor="#00000000"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/tranc_dark"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/tranc"
+                            android:orientation="horizontal"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp">
+
+                            <EditText
+                                android:id="@+id/numbered"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                                android:drawablePadding="15dp"
+                                android:hint="Enter mobile number"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:textColor="#1de9b6"
+                                android:textColorHint="@android:drawable/screen_background_dark_transparent" />
+
+                            <ImageView
+                                android:id="@+id/verifiedsign"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/ic_check_circle_black_24dp"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/verificationed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="25dp"
+                            android:background="@drawable/tranc"
+                            android:gravity="center"
+                            android:hint="Enter Code"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:padding="10dp"
+                            android:textColor="#1de9b6"
+                            android:textColorHint="#1de9b6"
+                            android:visibility="invisible" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/sendverifybt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:src="@drawable/ic_send_white_24dp"
+                            android:padding="4dp"
+                            android:tag="@string/tag_send"
+                            app:backgroundTint="#1de9b6"
+                            app:borderWidth="1.3dp" />
+
+                        <TextView
+                            android:id="@+id/timertv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="25sp"
+                            android:clickable="true"
+                            android:textColor="#1de9b6"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
