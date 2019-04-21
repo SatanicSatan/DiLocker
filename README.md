@@ -8,3 +8,5 @@ We can upload photos, videos and documents.
 Firebase Database.
 <br>
 Internet Requried.
+<br>
+Minimum Android Version OREO(API 26).
